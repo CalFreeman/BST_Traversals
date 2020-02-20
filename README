@@ -1,0 +1,69 @@
+Caleb Freeman
+CS4280 - Program Translations
+Instructor: Dr. Sharlee Climer
+Project #P0 
+
+Summary: Program will accept input from different sources, create a binary search tree based on the
+first character of the input data, traverse the tree using level-order, pre-order, and in-order traversals,
+and print out the results for all three traversals with specific indentations. 
+
+1-CONTENTS
+----------
+main.cpp        - source code
+buildTree.cpp   - BST functions
+  buildTree.h   
+node.h          - BST struct
+traversals.cpp  - inorder, preorder, postorder traversals
+  traversals.h
+.git/           - git Repository
+Makefile        - makefile
+README          - this file
+
+2-WORKS CITED
+----------
+
+https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
+
+https://www.geeksforgeeks.org/binary-search-tree-insert-parent-pointer/
+
+https://www.geeksforgeeks.org/level-order-tree-traversal/
+
+https://stackoverflow.com/questions/42912544/reading-a-file-for-each-word-and-sorting-those-words-with-a-binary-search-tree
+
+
+3-COMMAND LINE ARGUMENTS
+----------
+Usage: ./P0 
+       ./P0 [dirname]
+       ./P0 < [dirname]
+
+input file format:
+  input file must be a none-empty file consisting of only lowercase letters. 
+
+default settings: ./P0
+
+
+4-CODE COMPILATION:
+---------
+In my computer I am able to run the make file an execute with ./P0
+example:
+>make
+>./P0 [dirname]
+
+5-DESIGN DECISIONS & ISSUES
+---------
+Design Decisions:
+I decided to implement the BST using structs, with vector variable for holding the words pushed onto the nodes
+Includeded a 'parenter' pointer, and a 'depth' integer for formatting output.
+Checking for empty file in main using fscanf before passing the file to be built into a BST
+isatty(STDIN_FIELNO) to determine output file prefix
+Store user-input and redirection into a temp file for processing
+
+Major Issues:
+
+Minor Issues:
+
+
+6-GIT LOG 
+----------
+command line git ommited
